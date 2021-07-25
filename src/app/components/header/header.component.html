@@ -1,0 +1,25 @@
+<div>
+    <mat-toolbar color="primary">
+
+        <mat-toolbar-row class="toolbar-container">
+            <button mat-icon-button class="example-icon" matRipple aria-label="Example icon-button with menu icon">
+                <mat-icon>arrow_back</mat-icon>
+            </button>
+            <span>
+                <fa-icon [ngStyle]="{
+                            'font-size':'2rem',
+                            'color':'white'
+                        }" [icon]="faIoxhost" color="white"></fa-icon>
+            </span>
+            <button mat-icon-button matRipple class="example-icon" [matMenuTriggerFor]="menu">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </mat-toolbar-row>
+    </mat-toolbar>
+    <div>
+        <mat-menu #menu="matMenu">
+            <button *ngFor="let data of data.menulist " mat-menu-item>{{data}}</button>
+
+        </mat-menu>
+    </div>
+</div>

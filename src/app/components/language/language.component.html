@@ -1,0 +1,14 @@
+<div class="language-container">
+    <h3 [ngStyle]="{'text-align':'center','font-weight':'bold','margin':'1rem','font-size':'1.5rem'}">Please Select Your
+        Language</h3>
+    <!-- <button *ngFor="let data of data.language" class="btn-block" mat-raised-button color="primary">{{data}}</button> -->
+    <div class="btn-container" *ngFor="let data of data.language">
+        <p class="btn"> {{data}}</p>
+        <span class="span-btn">
+            <fa-icon [ngStyle]="{
+                'font-size':'2rem',
+                'color':'white'
+            }" [icon]="faArrowRight" color="white"></fa-icon>
+        </span>
+    </div>
+</div>

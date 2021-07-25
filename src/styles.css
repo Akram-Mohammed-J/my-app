@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.default-color {
+  color: "#17064b";
+}
+[override] app-header .mat-menu {
+  top: 71px;
+  left: 759.545px;
+}
